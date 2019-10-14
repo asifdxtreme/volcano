@@ -7,7 +7,7 @@ metadata:
     "volcano.sh/job-type": "MPI"
 spec:
   # 设置最小需要的服务 (小于总replicas数)
-  minAvailable: 3
+  minAvailable: 2
   schedulerName: volcano
   plugins:
     # 提供 ssh 免密认证
@@ -52,7 +52,7 @@ spec:
           restartPolicy: OnFailure
           imagePullSecrets:
             - name: default-secret
-    - replicas: 2
+    - replicas: 1
       name: mpiworker
       template:
         spec:
