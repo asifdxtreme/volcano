@@ -1,7 +1,7 @@
 apiVersion: batch.volcano.sh/v1alpha1
 kind: Job
 metadata:
-  name: lm-mpi-job
+  name: lm-mpi-job1
   labels:
     # 根据业务需要设置作业类型
     "volcano.sh/job-type": "MPI"
