@@ -42,13 +42,6 @@ spec:
                 - containerPort: 22
                   name: mpijob-port
               workingDir: /home
-              resources:
-                requests:
-                  cpu: "100m"
-                  memory: "512Mi"
-                limits:
-                  cpu: "100m"
-                  memory: "512Mi"
           restartPolicy: OnFailure
           imagePullSecrets:
             - name: default-secret
@@ -68,13 +61,6 @@ spec:
                 - containerPort: 22
                   name: mpijob-port
               workingDir: /home
-              resources:
-                requests:
-                  cpu: "100m"
-                  memory: "512Mi"
-                limits:
-                  cpu: "100m"
-                  memory: "512Mi"
           restartPolicy: OnFailure
           imagePullSecrets:
             - name: default-secret
