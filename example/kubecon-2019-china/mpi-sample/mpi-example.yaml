@@ -44,11 +44,11 @@ spec:
               workingDir: /home
               resources:
                 requests:
-                  cpu: "500m"
-                  memory: "1024Mi"
+                  cpu: "100m"
+                  memory: "512Mi"
                 limits:
-                  cpu: "500m"
-                  memory: "1024Mi"
+                  cpu: "100m"
+                  memory: "512Mi"
           restartPolicy: OnFailure
           imagePullSecrets:
             - name: default-secret
@@ -70,11 +70,11 @@ spec:
               workingDir: /home
               resources:
                 requests:
-                  cpu: "1024m"
-                  memory: "2048Mi"
+                  cpu: "100m"
+                  memory: "512Mi"
                 limits:
-                  cpu: "1024m"
-                  memory: "2048Mi"
+                  cpu: "100m"
+                  memory: "512Mi"
           restartPolicy: OnFailure
           imagePullSecrets:
             - name: default-secret
